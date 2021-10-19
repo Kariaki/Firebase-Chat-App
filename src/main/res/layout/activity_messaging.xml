@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/BackgroundColor"
+    tools:context=".MessagingScreens.MessagingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="?attr/headerColor"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:text="Messages"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botton_nav"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginBottom="10dp"
+        android:foreground="@drawable/add"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/white" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabLayout"
+
+        android:layout_below="@+id/toolbar" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botton_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_white"
+        android:visibility="invisible"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/small_text_color"
+        app:menu="@menu/messaging_nav_menu" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        app:tabIndicatorFullWidth="false"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tabLayout"
+        android:background="?attr/BackgroundColor"
+        app:tabIndicatorAnimationDuration="0"
+        app:tabIconTint="#8F9AB9"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="10dp"
+        app:tabIndicatorColor="?attr/indicatorColor"
+
+        android:layout_height="70dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:icon="@drawable/chat2" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/person" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/settings" />
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>

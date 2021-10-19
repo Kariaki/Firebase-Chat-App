@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginBottom="20dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:id="@+id/profileImage"
+        android:src="@drawable/five"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_height="60dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/profileImage"
+        android:orientation="vertical"
+        android:id="@+id/contentHolder"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:maxWidth="250dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="?attr/bigTextColor"
+            android:textStyle="bold"
+            android:text="Shane Martinez"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:maxLines="2"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="?attr/smallTextColor"
+            android:layout_marginTop="10dp"
+            android:text="On my way home but i needed to steop by the book store to"
+            android:maxWidth="250dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contentHolder"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@id/contentHolder"
+        android:id="@+id/indicator"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/purple_700"
+
+        app:cardCornerRadius="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="9"
+                android:lines="1"
+                android:layout_centerInParent="true"
+                android:textSize="15sp"
+                android:gravity="center"
+
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:text="5 min"
+        android:layout_marginEnd="20dp"
+
+        />
+
+
+</RelativeLayout>

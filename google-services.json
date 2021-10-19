@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280119669871",
+    "project_id": "messanger-6f629",
+    "storage_bucket": "messanger-6f629.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280119669871:android:24354b10f0c50591af899a",
+        "android_client_info": {
+          "package_name": "com.votenoid.messsanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280119669871-akddsrlrk4lkit0dhgf08dj5lmjt3raq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKF_Ey9ftdvhzyQUaTmsXX89J2RZdHzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280119669871-akddsrlrk4lkit0dhgf08dj5lmjt3raq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

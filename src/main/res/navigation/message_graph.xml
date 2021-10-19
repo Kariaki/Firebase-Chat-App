@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_graph"
+    app:startDestination="@id/authentication">
+    <fragment
+        android:id="@+id/createAccount"
+        android:name="com.votenoid.messsanger.MessagingScreens.StartUps.CreateAccount"
+        android:label="create_account"
+        tools:layout="@layout/create_account" >
+        <action
+            android:id="@+id/action_createAccount_to_aboutUserFagment"
+            app:destination="@id/aboutUserFagment" />
+        <argument
+            android:name="number"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUserFagment"
+        android:name="com.votenoid.messsanger.MessagingScreens.StartUps.AboutUserFagment"
+        android:label="about_user_fagment"
+        tools:layout="@layout/about_user_fagment" >
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authentication"
+        android:name="com.votenoid.messsanger.MessagingScreens.StartUps.Authentication"
+        android:label="authentication"
+        tools:layout="@layout/authentication" >
+        <action
+            android:id="@+id/action_authentication_to_createAccount"
+            app:destination="@id/createAccount" />
+    </fragment>
+</navigation>

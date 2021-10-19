@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.votenoid.messsanger.Screens.Home"
+        android:label="home"
+        tools:layout="@layout/home">
+
+        <action
+            android:id="@+id/action_home2_to_search"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_home2_to_optionDialog"
+            app:destination="@id/optionDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorite"
+        android:name="com.votenoid.messsanger.Screens.Favorite"
+        android:label="favorite"
+        tools:layout="@layout/favorite" >
+
+        <action
+            android:id="@+id/action_favorite_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.votenoid.messsanger.Screens.Search"
+        android:label="search"
+        tools:layout="@layout/search" >
+
+        <action
+            android:id="@+id/action_search_to_favorite"
+            app:destination="@id/favorite" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.votenoid.messsanger.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/settings2"
+        android:name="com.votenoid.messsanger.Screens.Settings"
+        android:label="settings"
+        tools:layout="@layout/settings" />
+    <dialog
+        android:id="@+id/optionDialog"
+        android:name="com.votenoid.messsanger.Screens.optionDialog"
+        android:label="optionDialog" />
+
+</navigation>

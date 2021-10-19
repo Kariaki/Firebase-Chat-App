@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="dt">
+        <attr name="BackgroundColor" format="color" />
+        <attr name="bigTextColor" format="color" />
+        <attr name="smallTextColor" format="color" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="headerColor" format="color" />
+        <attr name="chatStatusBar" format="color"> </attr>
+        <attr name="messageBox" format="color"> </attr>
+
+
+    </declare-styleable>
+</resources>

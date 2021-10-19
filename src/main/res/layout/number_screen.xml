@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagingScreens.StartUps.NumberScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/holder"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        >
+        <EditText
+            android:layout_width="85dp"
+            android:id="@+id/countryCode"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:inputType="number"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/countryCode"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="40dp"
+        android:text="Get code"
+        android:layout_below="@id/holder"
+        android:id="@+id/numberButton"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

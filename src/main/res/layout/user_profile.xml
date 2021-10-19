@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:background="?backgroundColor"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:minHeight="475dp"
+                android:background="?attr/backgroundColor"
+                app:collapsedTitleTextAppearance="@color/white"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed|exitUntilCollapsed"
+                app:titleEnabled="false">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="45dp"
+                    android:minHeight="350dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="parallax">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top">
+
+                            <RelativeLayout
+                                android:id="@+id/wallImageHolder"
+                                android:layout_width="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignBottom="@+id/aboutHolder"
+                                android:layout_height="wrap_content">
+
+
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"
+
+                                        android:src="@drawable/five" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#3E280743">
+
+                                    </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/profileImageHolder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="60dp"
+                                 android:padding="5dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:src="@drawable/five" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/profileDetailsHolder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/profileImageHolder"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="Gabriel Enemor"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="5dp"
+                                    android:text="#gabenemor"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:maxWidth="400dp"
+
+                                    android:text="UI/UX graphics and interface deisnger"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/activities"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/profileDetailsHolder"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text="605"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+
+                                        android:text="Activities"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text="605"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+
+                                        android:text="Audience"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text="605"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+
+                                        android:text="Clouds"
+                                        android:textColor="@color/white"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/aboutHolder"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/chat_second_background"
+                                android:layout_marginBottom="15sp"
+                                android:layout_below="@id/activities">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:lines="3"
+
+                                    android:maxWidth="350dp"
+                                    android:text="i am a super nigga with greate tarlent you will like to try lolololo" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="40dp"
+                    app:contentInsetStart="0dp">
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:backgroundTint="?attr/backgroundColor"
+                    app:tabIndicatorColor="@color/white"
+                    app:tabIndicatorGravity="center"
+                    app:tabIndicatorHeight="20dp"
+                    app:tabMode="fixed"
+                    app:tabTextColor="@color/white">
+
+                </com.google.android.material.tabs.TabLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/profileViewPager"
+            android:layout_width="match_parent"
+            android:background="?attr/backgroundColor"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

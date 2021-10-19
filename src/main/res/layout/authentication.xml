@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagingScreens.StartUps.Authentication">
+
+    <EditText
+        android:id="@+id/otp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:inputType="number"
+        android:visibility="gone"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/authenticationButton"
+        android:layout_below="@id/otp"
+        android:layout_margin="40dp"
+        android:text="Get code" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </RelativeLayout>
+
+</RelativeLayout>
